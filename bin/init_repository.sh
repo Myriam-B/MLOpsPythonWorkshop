@@ -27,7 +27,7 @@ gh repo set-default "https://github.com/${repositoryFullName}"
 
 # Create environment
 gh api --method PUT -H "Accept: application/vnd.github+json" "repos/${repositoryFullName}/environments/${environmentName}"
-
+#comment
 # Retrieve the current subscription and current tenant identifiers using Azure CLI
 subscriptionId=$(az account show --query "id" -o tsv)
 tenantId=$(az account show --query "tenantId" -o tsv)
